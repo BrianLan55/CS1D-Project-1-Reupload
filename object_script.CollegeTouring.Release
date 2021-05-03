@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\campus.o
+./release\trip.o
+./release\database.o
+./release\login.o
+./release\adminwindow.o
+./release\moc_mainwindow.o
+./release\moc_login.o
+./release\moc_adminwindow.o
+);

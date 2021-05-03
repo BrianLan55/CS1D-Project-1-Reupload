@@ -1,0 +1,12 @@
+<map id="souvenir.h" name="souvenir.h">
+<area shape="rect" id="node2" href="$campus_8h.html" title="campus.h" alt="" coords="430,80,509,107"/>
+<area shape="rect" id="node3" href="$campus_8cpp.html" title="campus.cpp" alt="" coords="327,155,420,181"/>
+<area shape="rect" id="node4" href="$trip_8h.html" title="trip.h" alt="" coords="444,155,495,181"/>
+<area shape="rect" id="node8" href="$mainwindow_8cpp.html" title="mainwindow.cpp" alt="" coords="239,379,356,405"/>
+<area shape="rect" id="node5" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="134,229,237,256"/>
+<area shape="rect" id="node11" href="$trip_8cpp.html" title="trip.cpp" alt="" coords="471,229,537,256"/>
+<area shape="rect" id="node6" href="$login_8h.html" title="login.h" alt="" coords="13,304,73,331"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title="main.cpp" alt="" coords="148,304,223,331"/>
+<area shape="rect" id="node10" href="$moc__mainwindow_8cpp.html" title="moc_mainwindow.cpp" alt="" coords="247,304,396,331"/>
+<area shape="rect" id="node7" href="$login_8cpp.html" title="login.cpp" alt="" coords="5,379,80,405"/>
+</map>

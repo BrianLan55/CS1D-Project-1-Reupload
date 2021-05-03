@@ -1,0 +1,3 @@
+<map id="Ui::Login" name="Ui::Login">
+<area shape="rect" id="node2" href="$class_ui___login.html" title="{Ui_Login\n|+ horizontalLayout\l+ groupBox\l+ horizontalLayout_3\l+ verticalLayout\l+ lineEdit_username\l+ lineEdit_password\l+ radioButton_showPassword\l+ horizontalLayout_2\l+ horizontalSpacer\l+ pushButton_login\l+ horizontalSpacer_2\l+ pushButton_cancel\l+ horizontalSpacer_4\l|+ setupUi()\l+ retranslateUi()\l}" alt="" coords="5,5,200,273"/>
+</map>

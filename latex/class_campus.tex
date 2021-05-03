@@ -1,0 +1,400 @@
+\hypertarget{class_campus}{}\section{Campus Class Reference}
+\label{class_campus}\index{Campus@{Campus}}
+
+
+A \hyperlink{class_campus}{Campus} class.  
+
+
+
+
+{\ttfamily \#include $<$campus.\+h$>$}
+
+
+
+Collaboration diagram for Campus\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{class_campus__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_campus_abda28c16930a310df27f2f47fc5e15b1}{Campus} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_campus_afd0eebcf5837173c3fcb1309a2adce35}{Campus} (Q\+String input\+Name)
+\begin{DoxyCompactList}\small\item\em A non-\/default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_campus_abb6121ca36778fc41590e3e40f1c7f66}{set\+Campus\+Name} (Q\+String input\+Name)
+\begin{DoxyCompactList}\small\item\em A normal member taking one arguement. \end{DoxyCompactList}\item 
+void \hyperlink{class_campus_a23f09217ec446b76c152efb9fe4a4b56}{visit\+Campus} ()
+\begin{DoxyCompactList}\small\item\em A normal member taking no arguement. \end{DoxyCompactList}\item 
+bool \hyperlink{class_campus_aa033579f18b429b55589d43da459a571}{is\+Visited} ()
+\begin{DoxyCompactList}\small\item\em A normal member taking returning a bool. \end{DoxyCompactList}\item 
+void \hyperlink{class_campus_a879fb70e4b00061fe37e74dfe6808c25}{add\+Souvenir} (Q\+String input\+Souvenir, double input\+Price, int input\+Quantity)
+\begin{DoxyCompactList}\small\item\em a normal member taking two arguements \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_campus_a809e348ff4c9d6c91aef834169c9ecf3}{get\+Campus\+Name} ()
+\begin{DoxyCompactList}\small\item\em A normal member return a Q\+String. \end{DoxyCompactList}\item 
+void \hyperlink{class_campus_a3e29b9f63fb6a66ed5a2c6a1fe0a7efd}{calculate\+Total\+Amount\+Spent} ()
+\begin{DoxyCompactList}\small\item\em A normal member. \end{DoxyCompactList}\item 
+double \hyperlink{class_campus_a87c0b0ac49c8afb595300a6cf02d2209}{get\+Total\+Amount\+Spent} ()
+\begin{DoxyCompactList}\small\item\em A normal member returning a double. \end{DoxyCompactList}\item 
+int \hyperlink{class_campus_a7d10a879ce94effb031a02ef58261902}{get\+Item\+Quantity} (Q\+String input\+Item)
+\begin{DoxyCompactList}\small\item\em A normal member taking one argument. \end{DoxyCompactList}\item 
+int \hyperlink{class_campus_a082abcb4a749dc02f6202eb5978219f0}{get\+Num\+Souvenirs} ()
+\begin{DoxyCompactList}\small\item\em A normal member returning an int. \end{DoxyCompactList}\item 
+void \hyperlink{class_campus_a9df6d860dce913b125409f5ecf2b61cf}{set\+Item\+Quantity} (Q\+String input\+Item, int input\+Quantity)
+\begin{DoxyCompactList}\small\item\em A normal member takint two arguments. \end{DoxyCompactList}\item 
+void \hyperlink{class_campus_afc08eb098c08a751e60b5b643c2d0e81}{add\+Item\+Quantity} (Q\+String input\+Item, int input\+Quantity)
+\begin{DoxyCompactList}\small\item\em A normal member taking two arguments. \end{DoxyCompactList}\item 
+void \hyperlink{class_campus_ae95241376c7252193d7960b22572e211}{remove\+Item} (Q\+String item)
+\begin{DoxyCompactList}\small\item\em A normal member taking on argument. \end{DoxyCompactList}\item 
+Q\+Vector$<$ \hyperlink{class_souvenir}{Souvenir} $>$\+::iterator \hyperlink{class_campus_a88b7dc84bb8754c76ec1579e0a075293}{get\+Souvenir\+List\+Begin} ()
+\begin{DoxyCompactList}\small\item\em A normal member returning an iterator pointing to the beginning of the list. \end{DoxyCompactList}\item 
+Q\+Vector$<$ \hyperlink{class_souvenir}{Souvenir} $>$\+::iterator \hyperlink{class_campus_ab9e5df7777d19980be0b431774e15063}{get\+Souvenir\+List\+End} ()
+\begin{DoxyCompactList}\small\item\em A normal member returning an iterator. \end{DoxyCompactList}\item 
+Q\+Vector$<$ \hyperlink{class_souvenir}{Souvenir} $>$ \hyperlink{class_campus_aae9e2dbb9a5188cbfbc30bb2a89195a3}{get\+Souvenir\+Vector} ()
+\begin{DoxyCompactList}\small\item\em A normal member returning a Q\+Vector. \end{DoxyCompactList}\item 
+void \hyperlink{class_campus_ac6d65337d2c655c92e476375ee4d355e}{clear} ()
+\begin{DoxyCompactList}\small\item\em A normal member. \end{DoxyCompactList}\item 
+int \hyperlink{class_campus_ac45d0728007e07587761b0fe28e3d959}{get\+Total\+Item\+Quantity} ()
+\begin{DoxyCompactList}\small\item\em A normal member returning an int. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Vector$<$ \hyperlink{class_souvenir}{Souvenir} $>$ \hyperlink{class_campus_a9223f6e8d47eaf31cb611629a14ac855}{s\+List}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_campus_afdffffedc0ba5ead586c44545cd5528b}{campus\+Name}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\item 
+double \hyperlink{class_campus_aa487dfe37b790362d7c7ee35d0806544}{total\+Amount}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\item 
+bool \hyperlink{class_campus_aa569a21d95e1b865b6bf6c2961a9630a}{visit}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\item 
+int \hyperlink{class_campus_a996a6e6575b6421616b7bc639b778b29}{num\+Souvenirs}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{class_campus}{Campus} class. 
+
+This class contains a list of souvenirs and A campus name. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_campus_abda28c16930a310df27f2f47fc5e15b1}\label{class_campus_abda28c16930a310df27f2f47fc5e15b1}} 
+\index{Campus@{Campus}!Campus@{Campus}}
+\index{Campus@{Campus}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{Campus()}{Campus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Campus\+::\+Campus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+Initializes all private data members other than vector of souvenirs. \mbox{\Hypertarget{class_campus_afd0eebcf5837173c3fcb1309a2adce35}\label{class_campus_afd0eebcf5837173c3fcb1309a2adce35}} 
+\index{Campus@{Campus}!Campus@{Campus}}
+\index{Campus@{Campus}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{Campus()}{Campus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Campus\+::\+Campus (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+Name }\end{DoxyParamCaption})}
+
+
+
+A non-\/default constructor. 
+
+Initializes all private data members other than vector of souvenirs. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_campus_afc08eb098c08a751e60b5b643c2d0e81}\label{class_campus_afc08eb098c08a751e60b5b643c2d0e81}} 
+\index{Campus@{Campus}!add\+Item\+Quantity@{add\+Item\+Quantity}}
+\index{add\+Item\+Quantity@{add\+Item\+Quantity}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{add\+Item\+Quantity()}{addItemQuantity()}}
+{\footnotesize\ttfamily void Campus\+::add\+Item\+Quantity (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+Item,  }\item[{int}]{input\+Quantity }\end{DoxyParamCaption})}
+
+
+
+A normal member taking two arguments. 
+
+add\+Item\+Quantity sums up quantity of a particular item 
+\begin{DoxyParams}{Parameters}
+{\em input\+Item} & souvenir name \\
+\hline
+{\em input\+Quantity} & souveir quantity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_campus_a879fb70e4b00061fe37e74dfe6808c25}\label{class_campus_a879fb70e4b00061fe37e74dfe6808c25}} 
+\index{Campus@{Campus}!add\+Souvenir@{add\+Souvenir}}
+\index{add\+Souvenir@{add\+Souvenir}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{add\+Souvenir()}{addSouvenir()}}
+{\footnotesize\ttfamily void Campus\+::add\+Souvenir (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+Souvenir,  }\item[{double}]{input\+Price,  }\item[{int}]{input\+Quantity }\end{DoxyParamCaption})}
+
+
+
+a normal member taking two arguements 
+
+add\+Souvenir adds souvenir to vector which has price associated 
+\begin{DoxyParams}{Parameters}
+{\em input\+Souvenir} & souvenir name \\
+\hline
+{\em input\+Price} & souvenir price \\
+\hline
+{\em input\+Quantity} & quantity of souvenir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_campus_a3e29b9f63fb6a66ed5a2c6a1fe0a7efd}\label{class_campus_a3e29b9f63fb6a66ed5a2c6a1fe0a7efd}} 
+\index{Campus@{Campus}!calculate\+Total\+Amount\+Spent@{calculate\+Total\+Amount\+Spent}}
+\index{calculate\+Total\+Amount\+Spent@{calculate\+Total\+Amount\+Spent}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{calculate\+Total\+Amount\+Spent()}{calculateTotalAmountSpent()}}
+{\footnotesize\ttfamily void Campus\+::calculate\+Total\+Amount\+Spent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member. 
+
+calculate\+Total\+Amount\+Spent calculates total amount of souvenirs purchased \mbox{\Hypertarget{class_campus_ac6d65337d2c655c92e476375ee4d355e}\label{class_campus_ac6d65337d2c655c92e476375ee4d355e}} 
+\index{Campus@{Campus}!clear@{clear}}
+\index{clear@{clear}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Campus\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member. 
+
+clear clears the souvenir list \mbox{\Hypertarget{class_campus_a809e348ff4c9d6c91aef834169c9ecf3}\label{class_campus_a809e348ff4c9d6c91aef834169c9ecf3}} 
+\index{Campus@{Campus}!get\+Campus\+Name@{get\+Campus\+Name}}
+\index{get\+Campus\+Name@{get\+Campus\+Name}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{get\+Campus\+Name()}{getCampusName()}}
+{\footnotesize\ttfamily Q\+String Campus\+::get\+Campus\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member return a Q\+String. 
+
+get\+Campus\+Name receives the name of campus \begin{DoxyReturn}{Returns}
+name of campus 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_campus_a7d10a879ce94effb031a02ef58261902}\label{class_campus_a7d10a879ce94effb031a02ef58261902}} 
+\index{Campus@{Campus}!get\+Item\+Quantity@{get\+Item\+Quantity}}
+\index{get\+Item\+Quantity@{get\+Item\+Quantity}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{get\+Item\+Quantity()}{getItemQuantity()}}
+{\footnotesize\ttfamily int Campus\+::get\+Item\+Quantity (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+Item }\end{DoxyParamCaption})}
+
+
+
+A normal member taking one argument. 
+
+get\+Item\+Quantity getter for souvenir quanitity 
+\begin{DoxyParams}{Parameters}
+{\em input\+Item} & souvenir name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+quantity of souvenirs purchased 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_campus_a082abcb4a749dc02f6202eb5978219f0}\label{class_campus_a082abcb4a749dc02f6202eb5978219f0}} 
+\index{Campus@{Campus}!get\+Num\+Souvenirs@{get\+Num\+Souvenirs}}
+\index{get\+Num\+Souvenirs@{get\+Num\+Souvenirs}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{get\+Num\+Souvenirs()}{getNumSouvenirs()}}
+{\footnotesize\ttfamily int Campus\+::get\+Num\+Souvenirs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member returning an int. 
+
+get\+Num\+Souvenirs getter for souvenir amount \begin{DoxyReturn}{Returns}
+number of souvenirs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_campus_a88b7dc84bb8754c76ec1579e0a075293}\label{class_campus_a88b7dc84bb8754c76ec1579e0a075293}} 
+\index{Campus@{Campus}!get\+Souvenir\+List\+Begin@{get\+Souvenir\+List\+Begin}}
+\index{get\+Souvenir\+List\+Begin@{get\+Souvenir\+List\+Begin}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{get\+Souvenir\+List\+Begin()}{getSouvenirListBegin()}}
+{\footnotesize\ttfamily Q\+Vector$<$ \hyperlink{class_souvenir}{Souvenir} $>$\+::iterator Campus\+::get\+Souvenir\+List\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member returning an iterator pointing to the beginning of the list. 
+
+get\+Souvenir\+List\+Begin gets an iterator at start of list \begin{DoxyReturn}{Returns}
+iterator beginning of list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_campus_ab9e5df7777d19980be0b431774e15063}\label{class_campus_ab9e5df7777d19980be0b431774e15063}} 
+\index{Campus@{Campus}!get\+Souvenir\+List\+End@{get\+Souvenir\+List\+End}}
+\index{get\+Souvenir\+List\+End@{get\+Souvenir\+List\+End}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{get\+Souvenir\+List\+End()}{getSouvenirListEnd()}}
+{\footnotesize\ttfamily Q\+Vector$<$ \hyperlink{class_souvenir}{Souvenir} $>$\+::iterator Campus\+::get\+Souvenir\+List\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member returning an iterator. 
+
+get\+Souvenir\+List\+End get an interator the end of list \begin{DoxyReturn}{Returns}
+iterator of the end of the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_campus_aae9e2dbb9a5188cbfbc30bb2a89195a3}\label{class_campus_aae9e2dbb9a5188cbfbc30bb2a89195a3}} 
+\index{Campus@{Campus}!get\+Souvenir\+Vector@{get\+Souvenir\+Vector}}
+\index{get\+Souvenir\+Vector@{get\+Souvenir\+Vector}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{get\+Souvenir\+Vector()}{getSouvenirVector()}}
+{\footnotesize\ttfamily Q\+Vector$<$ \hyperlink{class_souvenir}{Souvenir} $>$ Campus\+::get\+Souvenir\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member returning a Q\+Vector. 
+
+get\+Souvenir\+Vector get souvenir list \begin{DoxyReturn}{Returns}
+souvenir list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_campus_a87c0b0ac49c8afb595300a6cf02d2209}\label{class_campus_a87c0b0ac49c8afb595300a6cf02d2209}} 
+\index{Campus@{Campus}!get\+Total\+Amount\+Spent@{get\+Total\+Amount\+Spent}}
+\index{get\+Total\+Amount\+Spent@{get\+Total\+Amount\+Spent}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{get\+Total\+Amount\+Spent()}{getTotalAmountSpent()}}
+{\footnotesize\ttfamily double Campus\+::get\+Total\+Amount\+Spent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member returning a double. 
+
+get\+Total\+Amount\+Spent receive amount spent at college \begin{DoxyReturn}{Returns}
+total amount spent on souvenirs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_campus_ac45d0728007e07587761b0fe28e3d959}\label{class_campus_ac45d0728007e07587761b0fe28e3d959}} 
+\index{Campus@{Campus}!get\+Total\+Item\+Quantity@{get\+Total\+Item\+Quantity}}
+\index{get\+Total\+Item\+Quantity@{get\+Total\+Item\+Quantity}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{get\+Total\+Item\+Quantity()}{getTotalItemQuantity()}}
+{\footnotesize\ttfamily int Campus\+::get\+Total\+Item\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member returning an int. 
+
+get\+Total\+Item\+Quantity get the total quantity \begin{DoxyReturn}{Returns}
+total quantity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_campus_aa033579f18b429b55589d43da459a571}\label{class_campus_aa033579f18b429b55589d43da459a571}} 
+\index{Campus@{Campus}!is\+Visited@{is\+Visited}}
+\index{is\+Visited@{is\+Visited}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{is\+Visited()}{isVisited()}}
+{\footnotesize\ttfamily bool Campus\+::is\+Visited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member taking returning a bool. 
+
+is\+Visited checks if campus has been visited \begin{DoxyReturn}{Returns}
+bool representing if campus has been visited 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_campus_ae95241376c7252193d7960b22572e211}\label{class_campus_ae95241376c7252193d7960b22572e211}} 
+\index{Campus@{Campus}!remove\+Item@{remove\+Item}}
+\index{remove\+Item@{remove\+Item}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{remove\+Item()}{removeItem()}}
+{\footnotesize\ttfamily void Campus\+::remove\+Item (\begin{DoxyParamCaption}\item[{Q\+String}]{item }\end{DoxyParamCaption})}
+
+
+
+A normal member taking on argument. 
+
+remove\+Item removes souvenir from a list of souvenirs 
+\begin{DoxyParams}{Parameters}
+{\em item} & souvenir name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_campus_abb6121ca36778fc41590e3e40f1c7f66}\label{class_campus_abb6121ca36778fc41590e3e40f1c7f66}} 
+\index{Campus@{Campus}!set\+Campus\+Name@{set\+Campus\+Name}}
+\index{set\+Campus\+Name@{set\+Campus\+Name}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{set\+Campus\+Name()}{setCampusName()}}
+{\footnotesize\ttfamily void Campus\+::set\+Campus\+Name (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+Name }\end{DoxyParamCaption})}
+
+
+
+A normal member taking one arguement. 
+
+set\+Campus\+Name 
+\begin{DoxyParams}{Parameters}
+{\em input\+Name} & name of campuse \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_campus_a9df6d860dce913b125409f5ecf2b61cf}\label{class_campus_a9df6d860dce913b125409f5ecf2b61cf}} 
+\index{Campus@{Campus}!set\+Item\+Quantity@{set\+Item\+Quantity}}
+\index{set\+Item\+Quantity@{set\+Item\+Quantity}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{set\+Item\+Quantity()}{setItemQuantity()}}
+{\footnotesize\ttfamily void Campus\+::set\+Item\+Quantity (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+Item,  }\item[{int}]{input\+Quantity }\end{DoxyParamCaption})}
+
+
+
+A normal member takint two arguments. 
+
+set\+Item\+Quantity set quantity to a souvenir 
+\begin{DoxyParams}{Parameters}
+{\em input\+Item} & name of souvenir \\
+\hline
+{\em input\+Quantity} & quantity amount \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_campus_a23f09217ec446b76c152efb9fe4a4b56}\label{class_campus_a23f09217ec446b76c152efb9fe4a4b56}} 
+\index{Campus@{Campus}!visit\+Campus@{visit\+Campus}}
+\index{visit\+Campus@{visit\+Campus}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{visit\+Campus()}{visitCampus()}}
+{\footnotesize\ttfamily void Campus\+::visit\+Campus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member taking no arguement. 
+
+signifies that campus has been visited 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_campus_afdffffedc0ba5ead586c44545cd5528b}\label{class_campus_afdffffedc0ba5ead586c44545cd5528b}} 
+\index{Campus@{Campus}!campus\+Name@{campus\+Name}}
+\index{campus\+Name@{campus\+Name}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{campus\+Name}{campusName}}
+{\footnotesize\ttfamily Q\+String Campus\+::campus\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+name of campuse \mbox{\Hypertarget{class_campus_a996a6e6575b6421616b7bc639b778b29}\label{class_campus_a996a6e6575b6421616b7bc639b778b29}} 
+\index{Campus@{Campus}!num\+Souvenirs@{num\+Souvenirs}}
+\index{num\+Souvenirs@{num\+Souvenirs}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{num\+Souvenirs}{numSouvenirs}}
+{\footnotesize\ttfamily int Campus\+::num\+Souvenirs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+number of souvenirs purchased \mbox{\Hypertarget{class_campus_a9223f6e8d47eaf31cb611629a14ac855}\label{class_campus_a9223f6e8d47eaf31cb611629a14ac855}} 
+\index{Campus@{Campus}!s\+List@{s\+List}}
+\index{s\+List@{s\+List}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{s\+List}{sList}}
+{\footnotesize\ttfamily Q\+Vector$<$\hyperlink{class_souvenir}{Souvenir}$>$ Campus\+::s\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+a vector that stores a list of souvenirs \mbox{\Hypertarget{class_campus_aa487dfe37b790362d7c7ee35d0806544}\label{class_campus_aa487dfe37b790362d7c7ee35d0806544}} 
+\index{Campus@{Campus}!total\+Amount@{total\+Amount}}
+\index{total\+Amount@{total\+Amount}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{total\+Amount}{totalAmount}}
+{\footnotesize\ttfamily double Campus\+::total\+Amount\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+total amount of spent at college \mbox{\Hypertarget{class_campus_aa569a21d95e1b865b6bf6c2961a9630a}\label{class_campus_aa569a21d95e1b865b6bf6c2961a9630a}} 
+\index{Campus@{Campus}!visit@{visit}}
+\index{visit@{visit}!Campus@{Campus}}
+\subsubsection{\texorpdfstring{visit}{visit}}
+{\footnotesize\ttfamily bool Campus\+::visit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+is campus visited? 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{campus_8h}{campus.\+h}\item 
+\hyperlink{campus_8cpp}{campus.\+cpp}\end{DoxyCompactItemize}

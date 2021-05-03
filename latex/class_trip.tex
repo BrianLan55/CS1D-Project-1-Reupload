@@ -1,0 +1,526 @@
+\hypertarget{class_trip}{}\section{Trip Class Reference}
+\label{class_trip}\index{Trip@{Trip}}
+
+
+\hyperlink{class_trip}{Trip} Class.  
+
+
+
+
+{\ttfamily \#include $<$trip.\+h$>$}
+
+
+
+Collaboration diagram for Trip\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_trip__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trip_aa67b77d0d2de622ed5eb9e9cad34db8f}{Trip} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trip}{Trip} default constructor that initializes data members to the default values. \end{DoxyCompactList}\item 
+\hyperlink{class_trip_a1151ea3cd9f01ba725095b1efaf2bfba}{Trip} (Q\+String input\+Start\+College)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trip}{Trip} overloaded constructor that allows the specification of a starting college. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_a58073e12498a5cb48d835a53609b0ca6}{visit\+New\+College} (Q\+String input\+College)
+\begin{DoxyCompactList}\small\item\em Adds another college to the vector of colleges being visited. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_aff64975175eb1a0c55d408ea5521e092}{calculate\+Total\+Price} ()
+\begin{DoxyCompactList}\small\item\em Calculates the grand total spent during the trip. \end{DoxyCompactList}\item 
+double \hyperlink{class_trip_abf1da7d48ac859be42992e1fc3489e50}{get\+Total\+Price} ()
+\begin{DoxyCompactList}\small\item\em Returns the value calculated by \hyperlink{class_trip_aff64975175eb1a0c55d408ea5521e092}{calculate\+Total\+Price()} \end{DoxyCompactList}\item 
+double \hyperlink{class_trip_a8e1b96a203349d61a8b85342c2487d81}{get\+Total\+Amount\+Spent\+At\+College} (Q\+String input\+College)
+\begin{DoxyCompactList}\small\item\em Returns the total amount spent at a specifed college. \end{DoxyCompactList}\item 
+int \hyperlink{class_trip_ac636b0c45604cd57feba441a07d90097}{get\+Total\+Item\+At\+College} (Q\+String input\+College)
+\begin{DoxyCompactList}\small\item\em Returns the number of souvenirs that were purchased at a specified college. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_a0f10513e7d48bcc2e42dd264b876af28}{buy\+Item} (Q\+String input\+College, Q\+String input\+Item, int quantity, double price)
+\begin{DoxyCompactList}\small\item\em Purchases an item by adding it to the track\+Purchase vector. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_a510f0eba5d6a5ddf6f24db6f6fa10239}{add\+Item} (Q\+String input\+College, Q\+String input\+Item, int quantity, double price)
+\begin{DoxyCompactList}\small\item\em Increases the quantity of the souvenir if it is purchased at two different times. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_a4af54ea247a8c3fae20f6042743d30e6}{find\+Smallest\+Route} ()
+\begin{DoxyCompactList}\small\item\em Finds the next college to be visited that is the closest to the current college. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_ac5c7c1f7e9d4c62005f6677d971a270e}{find\+Smallest\+Route} (int college\+Amount)
+\begin{DoxyCompactList}\small\item\em find\+Shortest\+Route finds the shortest route of the colleges visited by calling recursive function \end{DoxyCompactList}\item 
+double \hyperlink{class_trip_aafe225b87fdabb218e1ef62ec2554310}{get\+Travel\+Distance} ()
+\begin{DoxyCompactList}\small\item\em Returns the total distance travelled during the trip. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_a44cf30382f49a42f2f45615b14330ea8}{output\+College\+Trip\+Smallest\+Route} ()
+\begin{DoxyCompactList}\small\item\em Outputs the trip in the most efficient order. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_a9ab6ed89354dcf98f5207e5213328826}{output\+College\+Trip\+No\+Order} ()
+\begin{DoxyCompactList}\small\item\em Outputs the trip in the order the colleges were added to the college\+List vector. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_a96259feb01ba260ca35d52e7bd59c25e}{print\+College\+List} ()
+\begin{DoxyCompactList}\small\item\em Outputs the values stored in the colleg\+List vector. \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_a16ab50d2755e1f61ed8c661d33e19362}{clear} ()
+\begin{DoxyCompactList}\small\item\em Sets all private data members to their default values. \end{DoxyCompactList}\item 
+Q\+Vector$<$ \hyperlink{class_souvenir}{Souvenir} $>$ \hyperlink{class_trip_ae4f0f1e7b633d20e4f1e5522ad990546}{get\+Souvenir\+Vector} (Q\+String campus\+Name)
+\begin{DoxyCompactList}\small\item\em Returns the vector of Souvenirs purchased at a specified college. \end{DoxyCompactList}\item 
+Q\+Vector$<$ \hyperlink{class_campus}{Campus} $>$ \hyperlink{class_trip_afb76381fc49c04660a203d8a5de70983}{get\+Campus\+Vector} ()
+\begin{DoxyCompactList}\small\item\em Returns the vector of colleges that will be visited during the trip. \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_trip_a61d4bb1ca70f99d64d2ce0eae7424c5a}{get\+Route} ()
+\begin{DoxyCompactList}\small\item\em Returns the most efficient route that should be taken during the trip. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_trip_a65fa30762ec89db37069a7180b22f939}{track\+New\+College} (Q\+String input\+College)
+\begin{DoxyCompactList}\small\item\em Adds the college to be visited onto the track\+Purchase and college\+List vectors. \end{DoxyCompactList}\item 
+bool \hyperlink{class_trip_adbcef3d2967bde8ee8439ca2664e5559}{is\+All\+Campus\+Visited} ()
+\begin{DoxyCompactList}\small\item\em Checks to see if all colleges in the track\+Purchase vector have been visited when calculating the most efficient route. \end{DoxyCompactList}\item 
+double \hyperlink{class_trip_a4b791f97dbeb09fbe4019699d6bbcef4}{calculate\+Smallest\+Route} (double sum, Q\+Vector$<$ Q\+String $>$\+::iterator start\+College\+Location)
+\begin{DoxyCompactList}\small\item\em Recursive function that calculates the most effient trip route. \end{DoxyCompactList}\item 
+double \hyperlink{class_trip_a1cd33b18e21d02a7bba297b94f9c9825}{calculate\+Smallest\+Route} (double distance, Q\+Vector$<$ Q\+String $>$\+::iterator start\+College\+Location, int campuses\+Left)
+\begin{DoxyCompactList}\small\item\em calculate\+Smallest\+Route recursive function to find ideal trip route given a list of colleges and distances \end{DoxyCompactList}\item 
+void \hyperlink{class_trip_a4959e64f6d27c6fc32b159ec2f6d4521}{check\+Off\+College} (Q\+String input\+College)
+\begin{DoxyCompactList}\small\item\em Checks off a college once it is visited. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_trip_ac31031fb291112f7d4d8a7d6249d8436}{starting\+College}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_trip_a64029dbf999502ffe6517283a3e44214}{college\+List}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_trip_a86c5d46368390a7160c2c25064f638ae}{trip\+Route}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\item 
+Q\+Vector$<$ \hyperlink{class_campus}{Campus} $>$ \hyperlink{class_trip_a1eada5f4eb916b135bd718292775f3b3}{track\+Purchase}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\item 
+double \hyperlink{class_trip_a471bf8051193c1ffbba249171c154bda}{total\+Distance}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\item 
+double \hyperlink{class_trip_a33db8f1dd1ea80305ac587dcf56bf563}{total\+Price}
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_trip}{Trip} Class. 
+
+Contains the information for a trip including the list of colleges to be visited, the most efficient order to visit them in, the total distance of the trip, the total amount spent during the trip, and the souvenirs purchased from each college. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_trip_aa67b77d0d2de622ed5eb9e9cad34db8f}\label{class_trip_aa67b77d0d2de622ed5eb9e9cad34db8f}} 
+\index{Trip@{Trip}!Trip@{Trip}}
+\index{Trip@{Trip}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{Trip()}{Trip()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Trip\+::\+Trip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_trip}{Trip} default constructor that initializes data members to the default values. 
+
+\mbox{\Hypertarget{class_trip_a1151ea3cd9f01ba725095b1efaf2bfba}\label{class_trip_a1151ea3cd9f01ba725095b1efaf2bfba}} 
+\index{Trip@{Trip}!Trip@{Trip}}
+\index{Trip@{Trip}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{Trip()}{Trip()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Trip\+::\+Trip (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+Start\+College }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_trip}{Trip} overloaded constructor that allows the specification of a starting college. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Start\+College} & -\/ College where trip will begin. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_trip_a510f0eba5d6a5ddf6f24db6f6fa10239}\label{class_trip_a510f0eba5d6a5ddf6f24db6f6fa10239}} 
+\index{Trip@{Trip}!add\+Item@{add\+Item}}
+\index{add\+Item@{add\+Item}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{add\+Item()}{addItem()}}
+{\footnotesize\ttfamily void Trip\+::add\+Item (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+College,  }\item[{Q\+String}]{input\+Item,  }\item[{int}]{quantity,  }\item[{double}]{price }\end{DoxyParamCaption})}
+
+
+
+Increases the quantity of the souvenir if it is purchased at two different times. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+College} & -\/ Name of college where souvenir was purchased \\
+\hline
+{\em input\+Item} & -\/ Name of souvenir purchased \\
+\hline
+{\em quantity} & -\/ Quantity sold of souvenir \\
+\hline
+{\em price} & -\/ Price of souvenir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_trip_a0f10513e7d48bcc2e42dd264b876af28}\label{class_trip_a0f10513e7d48bcc2e42dd264b876af28}} 
+\index{Trip@{Trip}!buy\+Item@{buy\+Item}}
+\index{buy\+Item@{buy\+Item}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{buy\+Item()}{buyItem()}}
+{\footnotesize\ttfamily void Trip\+::buy\+Item (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+College,  }\item[{Q\+String}]{input\+Item,  }\item[{int}]{quantity,  }\item[{double}]{price }\end{DoxyParamCaption})}
+
+
+
+Purchases an item by adding it to the track\+Purchase vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+College} & -\/ Name of college where souvenir was purchased \\
+\hline
+{\em input\+Item} & -\/ Name of souvenir purchased \\
+\hline
+{\em quantity} & -\/ Quantity sold of souvenir \\
+\hline
+{\em price} & -\/ Price of souvenir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_trip_a4b791f97dbeb09fbe4019699d6bbcef4}\label{class_trip_a4b791f97dbeb09fbe4019699d6bbcef4}} 
+\index{Trip@{Trip}!calculate\+Smallest\+Route@{calculate\+Smallest\+Route}}
+\index{calculate\+Smallest\+Route@{calculate\+Smallest\+Route}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{calculate\+Smallest\+Route()}{calculateSmallestRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Trip\+::calculate\+Smallest\+Route (\begin{DoxyParamCaption}\item[{double}]{sum,  }\item[{Q\+Vector$<$ Q\+String $>$\+::iterator}]{start\+College\+Location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Recursive function that calculates the most effient trip route. 
+
+A private method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sum} & -\/ Total distance travelled. \\
+\hline
+{\em start\+College\+Location} & -\/ College whose proximity to the next closest college will be determined. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total distance travelled during trip. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_a1cd33b18e21d02a7bba297b94f9c9825}\label{class_trip_a1cd33b18e21d02a7bba297b94f9c9825}} 
+\index{Trip@{Trip}!calculate\+Smallest\+Route@{calculate\+Smallest\+Route}}
+\index{calculate\+Smallest\+Route@{calculate\+Smallest\+Route}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{calculate\+Smallest\+Route()}{calculateSmallestRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Trip\+::calculate\+Smallest\+Route (\begin{DoxyParamCaption}\item[{double}]{distance,  }\item[{Q\+Vector$<$ Q\+String $>$\+::iterator}]{start\+College\+Location,  }\item[{int}]{campuses\+Left }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+calculate\+Smallest\+Route recursive function to find ideal trip route given a list of colleges and distances 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & total distance being accumulated \\
+\hline
+{\em start\+College\+Location} & iterator that determines where the list will begin upon each iteration \\
+\hline
+{\em campuses\+Left} & amount of campuses left \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+total distance traveled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_aff64975175eb1a0c55d408ea5521e092}\label{class_trip_aff64975175eb1a0c55d408ea5521e092}} 
+\index{Trip@{Trip}!calculate\+Total\+Price@{calculate\+Total\+Price}}
+\index{calculate\+Total\+Price@{calculate\+Total\+Price}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{calculate\+Total\+Price()}{calculateTotalPrice()}}
+{\footnotesize\ttfamily void Trip\+::calculate\+Total\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the grand total spent during the trip. 
+
+\mbox{\Hypertarget{class_trip_a4959e64f6d27c6fc32b159ec2f6d4521}\label{class_trip_a4959e64f6d27c6fc32b159ec2f6d4521}} 
+\index{Trip@{Trip}!check\+Off\+College@{check\+Off\+College}}
+\index{check\+Off\+College@{check\+Off\+College}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{check\+Off\+College()}{checkOffCollege()}}
+{\footnotesize\ttfamily void Trip\+::check\+Off\+College (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+College }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checks off a college once it is visited. 
+
+A private method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+College} & -\/ College whose visited status is being determined. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_trip_a16ab50d2755e1f61ed8c661d33e19362}\label{class_trip_a16ab50d2755e1f61ed8c661d33e19362}} 
+\index{Trip@{Trip}!clear@{clear}}
+\index{clear@{clear}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Trip\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets all private data members to their default values. 
+
+\mbox{\Hypertarget{class_trip_a4af54ea247a8c3fae20f6042743d30e6}\label{class_trip_a4af54ea247a8c3fae20f6042743d30e6}} 
+\index{Trip@{Trip}!find\+Smallest\+Route@{find\+Smallest\+Route}}
+\index{find\+Smallest\+Route@{find\+Smallest\+Route}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{find\+Smallest\+Route()}{findSmallestRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Trip\+::find\+Smallest\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Finds the next college to be visited that is the closest to the current college. 
+
+\mbox{\Hypertarget{class_trip_ac5c7c1f7e9d4c62005f6677d971a270e}\label{class_trip_ac5c7c1f7e9d4c62005f6677d971a270e}} 
+\index{Trip@{Trip}!find\+Smallest\+Route@{find\+Smallest\+Route}}
+\index{find\+Smallest\+Route@{find\+Smallest\+Route}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{find\+Smallest\+Route()}{findSmallestRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Trip\+::find\+Smallest\+Route (\begin{DoxyParamCaption}\item[{int}]{college\+Amount }\end{DoxyParamCaption})}
+
+
+
+find\+Shortest\+Route finds the shortest route of the colleges visited by calling recursive function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & of colleges to visit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_trip_afb76381fc49c04660a203d8a5de70983}\label{class_trip_afb76381fc49c04660a203d8a5de70983}} 
+\index{Trip@{Trip}!get\+Campus\+Vector@{get\+Campus\+Vector}}
+\index{get\+Campus\+Vector@{get\+Campus\+Vector}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{get\+Campus\+Vector()}{getCampusVector()}}
+{\footnotesize\ttfamily Q\+Vector$<$ \hyperlink{class_campus}{Campus} $>$ Trip\+::get\+Campus\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the vector of colleges that will be visited during the trip. 
+
+\begin{DoxyReturn}{Returns}
+Vector of college names to be visited. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_a61d4bb1ca70f99d64d2ce0eae7424c5a}\label{class_trip_a61d4bb1ca70f99d64d2ce0eae7424c5a}} 
+\index{Trip@{Trip}!get\+Route@{get\+Route}}
+\index{get\+Route@{get\+Route}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{get\+Route()}{getRoute()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String $>$ Trip\+::get\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the most efficient route that should be taken during the trip. 
+
+\begin{DoxyReturn}{Returns}
+Vector of college names in the most efficient order. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_ae4f0f1e7b633d20e4f1e5522ad990546}\label{class_trip_ae4f0f1e7b633d20e4f1e5522ad990546}} 
+\index{Trip@{Trip}!get\+Souvenir\+Vector@{get\+Souvenir\+Vector}}
+\index{get\+Souvenir\+Vector@{get\+Souvenir\+Vector}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{get\+Souvenir\+Vector()}{getSouvenirVector()}}
+{\footnotesize\ttfamily Q\+Vector$<$ \hyperlink{class_souvenir}{Souvenir} $>$ Trip\+::get\+Souvenir\+Vector (\begin{DoxyParamCaption}\item[{Q\+String}]{campus\+Name }\end{DoxyParamCaption})}
+
+
+
+Returns the vector of Souvenirs purchased at a specified college. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em campus\+Name} & -\/ College whose souvenir list is desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of Souvenirs for a specified college. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_a8e1b96a203349d61a8b85342c2487d81}\label{class_trip_a8e1b96a203349d61a8b85342c2487d81}} 
+\index{Trip@{Trip}!get\+Total\+Amount\+Spent\+At\+College@{get\+Total\+Amount\+Spent\+At\+College}}
+\index{get\+Total\+Amount\+Spent\+At\+College@{get\+Total\+Amount\+Spent\+At\+College}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{get\+Total\+Amount\+Spent\+At\+College()}{getTotalAmountSpentAtCollege()}}
+{\footnotesize\ttfamily double Trip\+::get\+Total\+Amount\+Spent\+At\+College (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+College }\end{DoxyParamCaption})}
+
+
+
+Returns the total amount spent at a specifed college. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+College} & -\/ College whose total amount spent is desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total amount spent at input\+College 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_ac636b0c45604cd57feba441a07d90097}\label{class_trip_ac636b0c45604cd57feba441a07d90097}} 
+\index{Trip@{Trip}!get\+Total\+Item\+At\+College@{get\+Total\+Item\+At\+College}}
+\index{get\+Total\+Item\+At\+College@{get\+Total\+Item\+At\+College}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{get\+Total\+Item\+At\+College()}{getTotalItemAtCollege()}}
+{\footnotesize\ttfamily int Trip\+::get\+Total\+Item\+At\+College (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+College }\end{DoxyParamCaption})}
+
+
+
+Returns the number of souvenirs that were purchased at a specified college. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+College} & -\/ College whose total number of souvenirs purchased is desired. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total number of souvenirs purchased at input\+College 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_abf1da7d48ac859be42992e1fc3489e50}\label{class_trip_abf1da7d48ac859be42992e1fc3489e50}} 
+\index{Trip@{Trip}!get\+Total\+Price@{get\+Total\+Price}}
+\index{get\+Total\+Price@{get\+Total\+Price}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{get\+Total\+Price()}{getTotalPrice()}}
+{\footnotesize\ttfamily double Trip\+::get\+Total\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the value calculated by \hyperlink{class_trip_aff64975175eb1a0c55d408ea5521e092}{calculate\+Total\+Price()} 
+
+\begin{DoxyReturn}{Returns}
+Grand total spent during the trip 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_aafe225b87fdabb218e1ef62ec2554310}\label{class_trip_aafe225b87fdabb218e1ef62ec2554310}} 
+\index{Trip@{Trip}!get\+Travel\+Distance@{get\+Travel\+Distance}}
+\index{get\+Travel\+Distance@{get\+Travel\+Distance}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{get\+Travel\+Distance()}{getTravelDistance()}}
+{\footnotesize\ttfamily double Trip\+::get\+Travel\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the total distance travelled during the trip. 
+
+\begin{DoxyReturn}{Returns}
+Total distance travelled during the trip. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_adbcef3d2967bde8ee8439ca2664e5559}\label{class_trip_adbcef3d2967bde8ee8439ca2664e5559}} 
+\index{Trip@{Trip}!is\+All\+Campus\+Visited@{is\+All\+Campus\+Visited}}
+\index{is\+All\+Campus\+Visited@{is\+All\+Campus\+Visited}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{is\+All\+Campus\+Visited()}{isAllCampusVisited()}}
+{\footnotesize\ttfamily bool Trip\+::is\+All\+Campus\+Visited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checks to see if all colleges in the track\+Purchase vector have been visited when calculating the most efficient route. 
+
+A private method.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_a9ab6ed89354dcf98f5207e5213328826}\label{class_trip_a9ab6ed89354dcf98f5207e5213328826}} 
+\index{Trip@{Trip}!output\+College\+Trip\+No\+Order@{output\+College\+Trip\+No\+Order}}
+\index{output\+College\+Trip\+No\+Order@{output\+College\+Trip\+No\+Order}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{output\+College\+Trip\+No\+Order()}{outputCollegeTripNoOrder()}}
+{\footnotesize\ttfamily void Trip\+::output\+College\+Trip\+No\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Outputs the trip in the order the colleges were added to the college\+List vector. 
+
+\mbox{\Hypertarget{class_trip_a44cf30382f49a42f2f45615b14330ea8}\label{class_trip_a44cf30382f49a42f2f45615b14330ea8}} 
+\index{Trip@{Trip}!output\+College\+Trip\+Smallest\+Route@{output\+College\+Trip\+Smallest\+Route}}
+\index{output\+College\+Trip\+Smallest\+Route@{output\+College\+Trip\+Smallest\+Route}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{output\+College\+Trip\+Smallest\+Route()}{outputCollegeTripSmallestRoute()}}
+{\footnotesize\ttfamily void Trip\+::output\+College\+Trip\+Smallest\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Outputs the trip in the most efficient order. 
+
+\mbox{\Hypertarget{class_trip_a96259feb01ba260ca35d52e7bd59c25e}\label{class_trip_a96259feb01ba260ca35d52e7bd59c25e}} 
+\index{Trip@{Trip}!print\+College\+List@{print\+College\+List}}
+\index{print\+College\+List@{print\+College\+List}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{print\+College\+List()}{printCollegeList()}}
+{\footnotesize\ttfamily void Trip\+::print\+College\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Outputs the values stored in the colleg\+List vector. 
+
+\mbox{\Hypertarget{class_trip_a65fa30762ec89db37069a7180b22f939}\label{class_trip_a65fa30762ec89db37069a7180b22f939}} 
+\index{Trip@{Trip}!track\+New\+College@{track\+New\+College}}
+\index{track\+New\+College@{track\+New\+College}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{track\+New\+College()}{trackNewCollege()}}
+{\footnotesize\ttfamily void Trip\+::track\+New\+College (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+College }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Adds the college to be visited onto the track\+Purchase and college\+List vectors. 
+
+A private method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+College} & -\/ College that will be visited. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_trip_a58073e12498a5cb48d835a53609b0ca6}\label{class_trip_a58073e12498a5cb48d835a53609b0ca6}} 
+\index{Trip@{Trip}!visit\+New\+College@{visit\+New\+College}}
+\index{visit\+New\+College@{visit\+New\+College}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{visit\+New\+College()}{visitNewCollege()}}
+{\footnotesize\ttfamily void Trip\+::visit\+New\+College (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+College }\end{DoxyParamCaption})}
+
+
+
+Adds another college to the vector of colleges being visited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+College} & -\/ Next college that will be visited. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_trip_a64029dbf999502ffe6517283a3e44214}\label{class_trip_a64029dbf999502ffe6517283a3e44214}} 
+\index{Trip@{Trip}!college\+List@{college\+List}}
+\index{college\+List@{college\+List}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{college\+List}{collegeList}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+String$>$ Trip\+::college\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+Vector of colleges to be visited during the trip \mbox{\Hypertarget{class_trip_ac31031fb291112f7d4d8a7d6249d8436}\label{class_trip_ac31031fb291112f7d4d8a7d6249d8436}} 
+\index{Trip@{Trip}!starting\+College@{starting\+College}}
+\index{starting\+College@{starting\+College}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{starting\+College}{startingCollege}}
+{\footnotesize\ttfamily Q\+String Trip\+::starting\+College\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+Name of college where trip will begin \mbox{\Hypertarget{class_trip_a471bf8051193c1ffbba249171c154bda}\label{class_trip_a471bf8051193c1ffbba249171c154bda}} 
+\index{Trip@{Trip}!total\+Distance@{total\+Distance}}
+\index{total\+Distance@{total\+Distance}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{total\+Distance}{totalDistance}}
+{\footnotesize\ttfamily double Trip\+::total\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+Total distance travelled during the trip. \mbox{\Hypertarget{class_trip_a33db8f1dd1ea80305ac587dcf56bf563}\label{class_trip_a33db8f1dd1ea80305ac587dcf56bf563}} 
+\index{Trip@{Trip}!total\+Price@{total\+Price}}
+\index{total\+Price@{total\+Price}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{total\+Price}{totalPrice}}
+{\footnotesize\ttfamily double Trip\+::total\+Price\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+Grand total spent during the trip. \mbox{\Hypertarget{class_trip_a1eada5f4eb916b135bd718292775f3b3}\label{class_trip_a1eada5f4eb916b135bd718292775f3b3}} 
+\index{Trip@{Trip}!track\+Purchase@{track\+Purchase}}
+\index{track\+Purchase@{track\+Purchase}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{track\+Purchase}{trackPurchase}}
+{\footnotesize\ttfamily Q\+Vector$<$\hyperlink{class_campus}{Campus}$>$ Trip\+::track\+Purchase\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+Vector of \hyperlink{class_campus}{Campus} objects that keeps track of the souvenirs purchased at each college. \mbox{\Hypertarget{class_trip_a86c5d46368390a7160c2c25064f638ae}\label{class_trip_a86c5d46368390a7160c2c25064f638ae}} 
+\index{Trip@{Trip}!trip\+Route@{trip\+Route}}
+\index{trip\+Route@{trip\+Route}!Trip@{Trip}}
+\subsubsection{\texorpdfstring{trip\+Route}{tripRoute}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+String$>$ Trip\+::trip\+Route\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A private variable. 
+
+Vector of colleges to be visited sorted in the most efficient order. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{trip_8h}{trip.\+h}\item 
+\hyperlink{trip_8cpp}{trip.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node3" href="$class_trip.html" title="Trip Class. " alt="" coords="137,293,359,664"/>
+<area shape="rect" id="node4" href="$class_ui_1_1_main_window.html" title="{Ui::MainWindow\n||}" alt="" coords="383,440,499,517"/>
+<area shape="rect" id="node5" href="$class_ui___main_window.html" title="{Ui_MainWindow\n|+ centralWidget\l+ gridLayout\l+ stackedWidget\l+ page_home\l+ horizontalLayoutWidget\l+ hl_home\l+ hs_home\l+ pushButton_RunAsAdmin\l+ verticalLayoutWidget\l+ vl_home\land 302 more...\l|+ setupUi()\l+ retranslateUi()\l}" alt="" coords="350,5,533,244"/>
+</map>

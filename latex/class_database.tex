@@ -1,0 +1,407 @@
+\hypertarget{class_database}{}\section{Database Class Reference}
+\label{class_database}\index{Database@{Database}}
+
+
+\hyperlink{class_database}{Database} Class.  
+
+
+
+
+{\ttfamily \#include $<$database.\+h$>$}
+
+
+
+Inheritance diagram for Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_database__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_database__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Sql\+Query\+Model $\ast$ \hyperlink{class_database_a6037c904ea4053908cefb67c2d05bd29}{display\+College\+And\+Distance\+List} ()
+\begin{DoxyCompactList}\small\item\em A normal member returning a Q\+Sql\+Query\+Model pointer. \end{DoxyCompactList}\item 
+Q\+Sql\+Query\+Model $\ast$ \hyperlink{class_database_a1979fb1dc3dbf64321c0d0f7e373f08c}{display\+College\+Only\+List} ()
+\begin{DoxyCompactList}\small\item\em A normal member returning a Q\+Sql\+Query\+Model pointer. \end{DoxyCompactList}\item 
+bool \hyperlink{class_database_a44af624b2b73c7ef7f75ca625302771f}{souvenir\+Exists\+At\+College} (Q\+String souvenir, Q\+String college)
+\begin{DoxyCompactList}\small\item\em souvenir\+Exists\+At\+College checks if a souvenir already exists at a particular college \end{DoxyCompactList}\item 
+Q\+Stack$<$ Q\+String $>$ \hyperlink{class_database_a72407a60cb8936fecbbe8f4ba694b913}{get\+College\+Name\+Stack\+Starting\+From} (Q\+String campus\+Name)
+\begin{DoxyCompactList}\small\item\em get\+College\+Name\+Stack\+Starting\+From creat a stack that contains all colleges in database and college passed in at the top \end{DoxyCompactList}\item 
+Q\+Sql\+Query\+Model $\ast$ \hyperlink{class_database_ad4a7631de5e445a2e8668ccbb2e7639c}{display\+Souvenir\+List} (Q\+String input\+College)
+\begin{DoxyCompactList}\small\item\em A normal member returning a Q\+Sql\+Query\+Model pointer. \end{DoxyCompactList}\item 
+Q\+Sql\+Query \hyperlink{class_database_ac929cf3fc1377642328b63d0d93b47d3}{get\+Distance\+Query} (Q\+String starting\+Campus)
+\begin{DoxyCompactList}\small\item\em A normal member returning a Q\+Sql\+Query\+Model pointer. \end{DoxyCompactList}\item 
+Q\+Sql\+Query\+Model $\ast$ \hyperlink{class_database_a4a1e6a7fbca600ff2420f29b7c4064d0}{display\+Campuses\+Except\+For} (Q\+String campus)
+\begin{DoxyCompactList}\small\item\em A normal member that takes a Q\+String returning a Q\+Sql\+Query\+Model pointer. \end{DoxyCompactList}\item 
+Q\+Sql\+Query\+Model $\ast$ \hyperlink{class_database_a578021769fe26c6efe0dd0faaad4b540}{get\+Distances\+And\+Campuses} (Q\+String college)
+\begin{DoxyCompactList}\small\item\em A normal member that takes one argument and returns a Q\+Sql\+Query\+Model pointer. \end{DoxyCompactList}\item 
+bool \hyperlink{class_database_aeaa8fe739adf1bf12343ee8d40125ddd}{add\+College\+To\+Database} (Q\+String start\+Campus, const Q\+Vector$<$ Q\+String $>$ \&end\+Campus, const Q\+Vector$<$ double $>$ \&distances)
+\begin{DoxyCompactList}\small\item\em A normal member takes three arguments. \end{DoxyCompactList}\item 
+void \hyperlink{class_database_a89d1c1802613ecaa1bda990465eeb5a3}{add\+Souvenir\+To\+Database} (Q\+String campus, Q\+String item\+Name, double price)
+\begin{DoxyCompactList}\small\item\em A normal member that takes three arguments. \end{DoxyCompactList}\item 
+void \hyperlink{class_database_ac1affb187b17ae9368aaa9a0cbd98fd3}{remove\+College\+From\+Database} (Q\+String campus)
+\begin{DoxyCompactList}\small\item\em A normal member that takes one argument. \end{DoxyCompactList}\item 
+bool \hyperlink{class_database_aae3e40f0501e75700b93548d83b76cfd}{remove\+Souvenir} (Q\+String college, Q\+String souvenir)
+\begin{DoxyCompactList}\small\item\em A normal member returning one argument. \end{DoxyCompactList}\item 
+bool \hyperlink{class_database_acf6e65da15d6219c2de6d8f5515cb6da}{change\+Souvenir\+Price\+At\+College} (Q\+String college, Q\+String souvenir, double price)
+\begin{DoxyCompactList}\small\item\em change\+Souvenir\+Price\+At\+College change the price of a souvenir at a particular college in database \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_database_a745e0e7d8279c576cd3672ba2f6375e1}{get\+College\+Name\+Vector} ()
+\begin{DoxyCompactList}\small\item\em get\+College\+Name\+Vector gets a list of college names from database \end{DoxyCompactList}\item 
+Q\+Queue$<$ Q\+String $>$ \hyperlink{class_database_a716dc593105e4e15cd7e0834d4d1d82a}{get\+College\+Name\+Queue\+Starting\+From} (Q\+String campus\+Name)
+\begin{DoxyCompactList}\small\item\em get\+College\+Name\+Queue\+Starting\+From get a queue of colleges that starts from a specified college \end{DoxyCompactList}\item 
+bool \hyperlink{class_database_a22d8c0fe6680a2dec485997863015a41}{college\+Exists} (Q\+String college)
+\begin{DoxyCompactList}\small\item\em college\+Exists checks if college exists \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_database}{Database} $\ast$ \hyperlink{class_database_a71e30b03e228b01f1460c73e770e3e49}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em A normal member. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_database}{Database} $\ast$ \hyperlink{class_database_a5926460fe1c15c95d470fcde637f8d22}{instance} = nullptr
+\begin{DoxyCompactList}\small\item\em A private variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_database}{Database} Class. 
+
+The \hyperlink{class_database}{Database} class represents S\+QL database and the queries needed to display or chamge information stored in the database. Implemented as singleton. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_database_a4703c80e6969d33565ea340f768fdadf}\label{class_database_a4703c80e6969d33565ea340f768fdadf}} 
+\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\subsubsection{\texorpdfstring{Database()}{Database()}}
+{\footnotesize\ttfamily Database\+::\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+A constructor. 
+
+Static pointer to an instance of a database that is open
+
+\hyperlink{class_database}{Database} initalizes database name 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_aeaa8fe739adf1bf12343ee8d40125ddd}\label{class_database_aeaa8fe739adf1bf12343ee8d40125ddd}} 
+\index{Database@{Database}!add\+College\+To\+Database@{add\+College\+To\+Database}}
+\index{add\+College\+To\+Database@{add\+College\+To\+Database}!Database@{Database}}
+\subsubsection{\texorpdfstring{add\+College\+To\+Database()}{addCollegeToDatabase()}}
+{\footnotesize\ttfamily bool Database\+::add\+College\+To\+Database (\begin{DoxyParamCaption}\item[{Q\+String}]{start\+Campus,  }\item[{const Q\+Vector$<$ Q\+String $>$ \&}]{end\+Campus,  }\item[{const Q\+Vector$<$ double $>$ \&}]{distances }\end{DoxyParamCaption})}
+
+
+
+A normal member takes three arguments. 
+
+add\+College\+To\+Database insert college to database 
+\begin{DoxyParams}{Parameters}
+{\em start\+Campus} & starting campus \\
+\hline
+{\em end\+Campus} & ending campuses \\
+\hline
+{\em distances} & distances from starting campus to ending campus \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_database_a89d1c1802613ecaa1bda990465eeb5a3}\label{class_database_a89d1c1802613ecaa1bda990465eeb5a3}} 
+\index{Database@{Database}!add\+Souvenir\+To\+Database@{add\+Souvenir\+To\+Database}}
+\index{add\+Souvenir\+To\+Database@{add\+Souvenir\+To\+Database}!Database@{Database}}
+\subsubsection{\texorpdfstring{add\+Souvenir\+To\+Database()}{addSouvenirToDatabase()}}
+{\footnotesize\ttfamily void Database\+::add\+Souvenir\+To\+Database (\begin{DoxyParamCaption}\item[{Q\+String}]{campus,  }\item[{Q\+String}]{item\+Name,  }\item[{double}]{price }\end{DoxyParamCaption})}
+
+
+
+A normal member that takes three arguments. 
+
+add\+Souvenir\+To\+Database adds souvenir to souvenir database 
+\begin{DoxyParams}{Parameters}
+{\em campus} & campus name \\
+\hline
+{\em item\+Name} & name of souvenir \\
+\hline
+{\em price} & price of souvenir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_database_acf6e65da15d6219c2de6d8f5515cb6da}\label{class_database_acf6e65da15d6219c2de6d8f5515cb6da}} 
+\index{Database@{Database}!change\+Souvenir\+Price\+At\+College@{change\+Souvenir\+Price\+At\+College}}
+\index{change\+Souvenir\+Price\+At\+College@{change\+Souvenir\+Price\+At\+College}!Database@{Database}}
+\subsubsection{\texorpdfstring{change\+Souvenir\+Price\+At\+College()}{changeSouvenirPriceAtCollege()}}
+{\footnotesize\ttfamily bool Database\+::change\+Souvenir\+Price\+At\+College (\begin{DoxyParamCaption}\item[{Q\+String}]{college,  }\item[{Q\+String}]{souvenir,  }\item[{double}]{price }\end{DoxyParamCaption})}
+
+
+
+change\+Souvenir\+Price\+At\+College change the price of a souvenir at a particular college in database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em college} & college name \\
+\hline
+{\em souvenir} & souvenir name \\
+\hline
+{\em price} & souvenir price \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a22d8c0fe6680a2dec485997863015a41}\label{class_database_a22d8c0fe6680a2dec485997863015a41}} 
+\index{Database@{Database}!college\+Exists@{college\+Exists}}
+\index{college\+Exists@{college\+Exists}!Database@{Database}}
+\subsubsection{\texorpdfstring{college\+Exists()}{collegeExists()}}
+{\footnotesize\ttfamily bool Database\+::college\+Exists (\begin{DoxyParamCaption}\item[{Q\+String}]{college }\end{DoxyParamCaption})}
+
+
+
+college\+Exists checks if college exists 
+
+
+\begin{DoxyParams}{Parameters}
+{\em college} & college name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool representing if college exists or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a4a1e6a7fbca600ff2420f29b7c4064d0}\label{class_database_a4a1e6a7fbca600ff2420f29b7c4064d0}} 
+\index{Database@{Database}!display\+Campuses\+Except\+For@{display\+Campuses\+Except\+For}}
+\index{display\+Campuses\+Except\+For@{display\+Campuses\+Except\+For}!Database@{Database}}
+\subsubsection{\texorpdfstring{display\+Campuses\+Except\+For()}{displayCampusesExceptFor()}}
+{\footnotesize\ttfamily Q\+Sql\+Query\+Model $\ast$ Database\+::display\+Campuses\+Except\+For (\begin{DoxyParamCaption}\item[{Q\+String}]{campus }\end{DoxyParamCaption})}
+
+
+
+A normal member that takes a Q\+String returning a Q\+Sql\+Query\+Model pointer. 
+
+display\+Campuses\+Except\+For displays all campuses besides one 
+\begin{DoxyParams}{Parameters}
+{\em campus} & college name that is excluded from table \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+query from distance db that excludes one college 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a6037c904ea4053908cefb67c2d05bd29}\label{class_database_a6037c904ea4053908cefb67c2d05bd29}} 
+\index{Database@{Database}!display\+College\+And\+Distance\+List@{display\+College\+And\+Distance\+List}}
+\index{display\+College\+And\+Distance\+List@{display\+College\+And\+Distance\+List}!Database@{Database}}
+\subsubsection{\texorpdfstring{display\+College\+And\+Distance\+List()}{displayCollegeAndDistanceList()}}
+{\footnotesize\ttfamily Q\+Sql\+Query\+Model $\ast$ Database\+::display\+College\+And\+Distance\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member returning a Q\+Sql\+Query\+Model pointer. 
+
+display\+College\+And\+Distance\+List creates a model of all colleges and distances \begin{DoxyReturn}{Returns}
+model that displays all colleges and distances in distance table 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a1979fb1dc3dbf64321c0d0f7e373f08c}\label{class_database_a1979fb1dc3dbf64321c0d0f7e373f08c}} 
+\index{Database@{Database}!display\+College\+Only\+List@{display\+College\+Only\+List}}
+\index{display\+College\+Only\+List@{display\+College\+Only\+List}!Database@{Database}}
+\subsubsection{\texorpdfstring{display\+College\+Only\+List()}{displayCollegeOnlyList()}}
+{\footnotesize\ttfamily Q\+Sql\+Query\+Model $\ast$ Database\+::display\+College\+Only\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A normal member returning a Q\+Sql\+Query\+Model pointer. 
+
+\mbox{\Hypertarget{class_database_ad4a7631de5e445a2e8668ccbb2e7639c}\label{class_database_ad4a7631de5e445a2e8668ccbb2e7639c}} 
+\index{Database@{Database}!display\+Souvenir\+List@{display\+Souvenir\+List}}
+\index{display\+Souvenir\+List@{display\+Souvenir\+List}!Database@{Database}}
+\subsubsection{\texorpdfstring{display\+Souvenir\+List()}{displaySouvenirList()}}
+{\footnotesize\ttfamily Q\+Sql\+Query\+Model $\ast$ Database\+::display\+Souvenir\+List (\begin{DoxyParamCaption}\item[{Q\+String}]{input\+College }\end{DoxyParamCaption})}
+
+
+
+A normal member returning a Q\+Sql\+Query\+Model pointer. 
+
+display\+Souvenir\+List displays list of souvenirs at a specific college 
+\begin{DoxyParams}{Parameters}
+{\em input\+College} & college name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+model containing a table of souvenirs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a716dc593105e4e15cd7e0834d4d1d82a}\label{class_database_a716dc593105e4e15cd7e0834d4d1d82a}} 
+\index{Database@{Database}!get\+College\+Name\+Queue\+Starting\+From@{get\+College\+Name\+Queue\+Starting\+From}}
+\index{get\+College\+Name\+Queue\+Starting\+From@{get\+College\+Name\+Queue\+Starting\+From}!Database@{Database}}
+\subsubsection{\texorpdfstring{get\+College\+Name\+Queue\+Starting\+From()}{getCollegeNameQueueStartingFrom()}}
+{\footnotesize\ttfamily Q\+Queue$<$ Q\+String $>$ Database\+::get\+College\+Name\+Queue\+Starting\+From (\begin{DoxyParamCaption}\item[{Q\+String}]{campus\+Name }\end{DoxyParamCaption})}
+
+
+
+get\+College\+Name\+Queue\+Starting\+From get a queue of colleges that starts from a specified college 
+
+
+\begin{DoxyParams}{Parameters}
+{\em campus\+Name} & name of starting college \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+queue of college names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a72407a60cb8936fecbbe8f4ba694b913}\label{class_database_a72407a60cb8936fecbbe8f4ba694b913}} 
+\index{Database@{Database}!get\+College\+Name\+Stack\+Starting\+From@{get\+College\+Name\+Stack\+Starting\+From}}
+\index{get\+College\+Name\+Stack\+Starting\+From@{get\+College\+Name\+Stack\+Starting\+From}!Database@{Database}}
+\subsubsection{\texorpdfstring{get\+College\+Name\+Stack\+Starting\+From()}{getCollegeNameStackStartingFrom()}}
+{\footnotesize\ttfamily Q\+Stack$<$ Q\+String $>$ Database\+::get\+College\+Name\+Stack\+Starting\+From (\begin{DoxyParamCaption}\item[{Q\+String}]{campus\+Name }\end{DoxyParamCaption})}
+
+
+
+get\+College\+Name\+Stack\+Starting\+From creat a stack that contains all colleges in database and college passed in at the top 
+
+
+\begin{DoxyParams}{Parameters}
+{\em campus\+Name} & name of college going to top of stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a745e0e7d8279c576cd3672ba2f6375e1}\label{class_database_a745e0e7d8279c576cd3672ba2f6375e1}} 
+\index{Database@{Database}!get\+College\+Name\+Vector@{get\+College\+Name\+Vector}}
+\index{get\+College\+Name\+Vector@{get\+College\+Name\+Vector}!Database@{Database}}
+\subsubsection{\texorpdfstring{get\+College\+Name\+Vector()}{getCollegeNameVector()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String $>$ Database\+::get\+College\+Name\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+College\+Name\+Vector gets a list of college names from database 
+
+\begin{DoxyReturn}{Returns}
+vector of college names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_ac929cf3fc1377642328b63d0d93b47d3}\label{class_database_ac929cf3fc1377642328b63d0d93b47d3}} 
+\index{Database@{Database}!get\+Distance\+Query@{get\+Distance\+Query}}
+\index{get\+Distance\+Query@{get\+Distance\+Query}!Database@{Database}}
+\subsubsection{\texorpdfstring{get\+Distance\+Query()}{getDistanceQuery()}}
+{\footnotesize\ttfamily Q\+Sql\+Query Database\+::get\+Distance\+Query (\begin{DoxyParamCaption}\item[{Q\+String}]{starting\+Campus }\end{DoxyParamCaption})}
+
+
+
+A normal member returning a Q\+Sql\+Query\+Model pointer. 
+
+get\+Distance\+Query creates a model and stores a table containing distances at a specific college 
+\begin{DoxyParams}{Parameters}
+{\em starting\+Campus} & starting campus name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a578021769fe26c6efe0dd0faaad4b540}\label{class_database_a578021769fe26c6efe0dd0faaad4b540}} 
+\index{Database@{Database}!get\+Distances\+And\+Campuses@{get\+Distances\+And\+Campuses}}
+\index{get\+Distances\+And\+Campuses@{get\+Distances\+And\+Campuses}!Database@{Database}}
+\subsubsection{\texorpdfstring{get\+Distances\+And\+Campuses()}{getDistancesAndCampuses()}}
+{\footnotesize\ttfamily Q\+Sql\+Query\+Model $\ast$ Database\+::get\+Distances\+And\+Campuses (\begin{DoxyParamCaption}\item[{Q\+String}]{college }\end{DoxyParamCaption})}
+
+
+
+A normal member that takes one argument and returns a Q\+Sql\+Query\+Model pointer. 
+
+get\+Distances\+And\+Campuses distances and campuses for a particular college 
+\begin{DoxyParams}{Parameters}
+{\em college} & college name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+model containing distances and campuses from a particular college 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a71e30b03e228b01f1460c73e770e3e49}\label{class_database_a71e30b03e228b01f1460c73e770e3e49}} 
+\index{Database@{Database}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Database@{Database}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static \hyperlink{class_database}{Database}$\ast$ Database\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+A normal member. 
+
+get\+Instance returns a single instance of the database \begin{DoxyReturn}{Returns}
+returns a single instance of the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_ac1affb187b17ae9368aaa9a0cbd98fd3}\label{class_database_ac1affb187b17ae9368aaa9a0cbd98fd3}} 
+\index{Database@{Database}!remove\+College\+From\+Database@{remove\+College\+From\+Database}}
+\index{remove\+College\+From\+Database@{remove\+College\+From\+Database}!Database@{Database}}
+\subsubsection{\texorpdfstring{remove\+College\+From\+Database()}{removeCollegeFromDatabase()}}
+{\footnotesize\ttfamily void Database\+::remove\+College\+From\+Database (\begin{DoxyParamCaption}\item[{Q\+String}]{campus }\end{DoxyParamCaption})}
+
+
+
+A normal member that takes one argument. 
+
+remove\+College\+From\+Database removes college from database 
+\begin{DoxyParams}{Parameters}
+{\em campus} & college name to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_database_aae3e40f0501e75700b93548d83b76cfd}\label{class_database_aae3e40f0501e75700b93548d83b76cfd}} 
+\index{Database@{Database}!remove\+Souvenir@{remove\+Souvenir}}
+\index{remove\+Souvenir@{remove\+Souvenir}!Database@{Database}}
+\subsubsection{\texorpdfstring{remove\+Souvenir()}{removeSouvenir()}}
+{\footnotesize\ttfamily bool Database\+::remove\+Souvenir (\begin{DoxyParamCaption}\item[{Q\+String}]{college,  }\item[{Q\+String}]{souvenir }\end{DoxyParamCaption})}
+
+
+
+A normal member returning one argument. 
+
+get\+College\+Name\+Vector \begin{DoxyReturn}{Returns}
+a vector of college names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a44af624b2b73c7ef7f75ca625302771f}\label{class_database_a44af624b2b73c7ef7f75ca625302771f}} 
+\index{Database@{Database}!souvenir\+Exists\+At\+College@{souvenir\+Exists\+At\+College}}
+\index{souvenir\+Exists\+At\+College@{souvenir\+Exists\+At\+College}!Database@{Database}}
+\subsubsection{\texorpdfstring{souvenir\+Exists\+At\+College()}{souvenirExistsAtCollege()}}
+{\footnotesize\ttfamily bool Database\+::souvenir\+Exists\+At\+College (\begin{DoxyParamCaption}\item[{Q\+String}]{souvenir,  }\item[{Q\+String}]{college }\end{DoxyParamCaption})}
+
+
+
+souvenir\+Exists\+At\+College checks if a souvenir already exists at a particular college 
+
+
+\begin{DoxyParams}{Parameters}
+{\em souvenir} & name of souvenir \\
+\hline
+{\em college} & name of college \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_database_a5926460fe1c15c95d470fcde637f8d22}\label{class_database_a5926460fe1c15c95d470fcde637f8d22}} 
+\index{Database@{Database}!instance@{instance}}
+\index{instance@{instance}!Database@{Database}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \hyperlink{class_database}{Database} $\ast$ Database\+::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+A private variable. 
+
+instance static pointer to siginify one instance of database 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{database_8h}{database.\+h}\item 
+\hyperlink{database_8cpp}{database.\+cpp}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}
